@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
   padding: 2em;  
   width: 100%;
-  max-height: 12%;
+  max-height: 10%;
   background-color: #121213;
   position: fixed;
   top: 0;
@@ -35,7 +35,7 @@ body {
   margin-left: 102px;
 }
 .brand span {
-  color: rgb(255, 238, 0);
+  color: #AAEB83;
 }
 #logo{
   text-decoration: none;
@@ -78,12 +78,12 @@ body {
 }
 
 .menu li:hover a{
-  background-color: rgb(255, 238, 0);
+  background-color: #AAEB83;
   color: #121213;
 }
 
 .menu .active {
-  color: rgb(255, 238, 0);
+  color: #AAEB83;
  
 }
 
@@ -109,12 +109,16 @@ h1 {
 }
 
 .info-content span {
-  color: rgb(255, 238, 0);
+  color: #AAEB83;
+}
+
+.info-content p{
+  text-align: justify;
 }
 
 .download-cv {
   padding: 10px 20px;
-  background-color: rgb(255, 238, 0);
+  background-color: #AAEB83;
   border: none;
   border-radius: 20px;
   margin-top: 10px;
@@ -130,7 +134,7 @@ h1 {
 }
 
 .main img {
-  border:  7px solid rgb(255, 238, 0);
+  border:  7px solid #AAEB83;
   width: 350px;
   height: 450px;
   z-index: 1;
@@ -147,6 +151,7 @@ h1 {
 
 .about img {
   width: 100%;
+  height: 110vh;
   grid-column: 1/5;
 }
 
@@ -163,7 +168,7 @@ h1 {
 .divider {
   height: 4px;
   width: 60px;
-  background-color: rgb(255, 238, 0);
+  background-color: #AAEB83;
   margin-top: 5px;
   margin-bottom: 2em;
 }
@@ -171,6 +176,7 @@ h1 {
 .about p {
   margin-bottom: 1em;
   color: #121213ed;
+  text-align: justify;
 }
 
 .portfolio,
@@ -310,7 +316,7 @@ h1 {
   border-radius: 20px;
   border: none;
   text-transform: uppercase;
-  background-color: rgb(255, 238, 0);
+  background-color: #AAEB83;
 }
 
 
@@ -322,7 +328,7 @@ h1 {
   width: 100vw;
   height: 200px;
   padding: 2em;
-  background-color: rgb(255, 238, 0);
+  background-color: #AAEB83;
 }
 
 .footer-content h2 {
@@ -349,4 +355,61 @@ h1 {
 
 .sotial-networks i {
   font-size: 1.5em;
+}
+
+.experience {
+  height: 110vh;
+}
+
+.experience .experience-heading{
+      padding-top: 6em;
+      padding-left: 5em;
+}
+  
+.experience .experience-heading  h2 {
+      font-size: 2em;
+      color: #121213;   
+}
+
+.experience .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* Distribuye las 3 tablas verticalmente */
+  width: 100%;
+}
+
+.experience-card{
+  width: 80%;
+    flex: 1;
+    justify-content: center;
+    /* Cada una ocupa 1 parte del alto disponible */
+    overflow-y: auto;
+    /* Agrega scroll si el contenido se pasa */
+}
+
+.experience-card table {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 0;
+}
+
+.experience-card th,
+.experience-card td {
+  padding: 8px;
+  text-align: left;
+  border: 0px solid #ccc;
+}
+
+.experience-card th{
+  font-size: 1.5em;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.experience-card th img{
+  width: 10%;
 }
