@@ -14,15 +14,15 @@ body {
 
 
 .wrapper {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background-color: #121213;
   color: rgb(219, 216, 216);
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 2em;  
+  padding: 2em 5vw;
   width: 100%;
   max-height: 10%;
   background-color: #121213;
@@ -30,61 +30,77 @@ body {
   top: 0;
   z-index: 2;
 }
+
 .brand {
   margin-top: -7px;
   margin-left: 102px;
 }
+
 .brand span {
   color: #AAEB83;
 }
-#logo{
+
+#logo {
   text-decoration: none;
-  color:white;
+  color: white;
 
 }
-#logo:link, #logo:visited,  #logo:hover, #logo:active{
+
+#logo:link,
+#logo:visited,
+#logo:hover,
+#logo:active {
   display: block;
   text-decoration: none;
   white-space: nowrap;
-  width: 19ch;
-  animation: typing 2s steps(18) 2,blink .5s step-end alternate;
+  max-width: 100%;
+  animation: typing 2s steps(18) 2, blink .5s step-end alternate;
   overflow: hidden;
 }
+
 /*efecto logo*/
 @keyframes typing {
-  from { width: 0 }
+  from {
+    width: 0
+  }
 }
 
-@keyframes blink{
-  50% {border-color:transparent}
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
+
 /*fin efecto logo*/
 
 .menu {
   display: flex;
   width: 50%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-.menu  li {
+
+.menu li {
   list-style: none;
 
 }
+
 .menu a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   transition: ease-in 0.3s;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
-.menu li:hover a{
+.menu li:hover a {
   background-color: #AAEB83;
   color: #121213;
 }
 
 .menu .active {
   color: #AAEB83;
- 
+
 }
 
 
@@ -96,9 +112,9 @@ body {
 .main {
   margin: 0 auto;
   width: 80vw;
-  height: 88vh;
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2em;
   margin-top: 3%;
@@ -108,11 +124,17 @@ h1 {
   font-size: 3em;
 }
 
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
 .info-content span {
   color: #AAEB83;
 }
 
-.info-content p{
+.info-content p {
   text-align: justify;
 }
 
@@ -134,7 +156,7 @@ h1 {
 }
 
 .main img {
-  border:  7px solid #AAEB83;
+  border: 7px solid #AAEB83;
   width: 350px;
   height: 450px;
   z-index: 1;
@@ -144,19 +166,20 @@ h1 {
 .about {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
+  width: 100%;
   align-items: center;
-  height: 110vh;
+  min-height: 100vh;
 }
 
 .about img {
   width: 100%;
-  height: 110vh;
+  height: auto;
   grid-column: 1/5;
+  padding-left: 3em;
 }
 
 .about-info {
-  grid-column: 5/10;
+  grid-column: 5/11;
   padding: 3em;
 }
 
@@ -181,8 +204,8 @@ h1 {
 
 .portfolio,
 .contact-section {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   background-color: #121213;
   color: #fff;
 }
@@ -202,37 +225,39 @@ h1 {
 .container-contact {
   margin: 0 auto;
   display: flex;
-  align-items: center;
-  height: 80vh;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .contact-section img {
-  width: 750px;
-  height: 700px;
-  bottom: 0px;
+  width: 100%;
+    max-width: 600px;
+    height: auto;
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+      -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
 .portfolio-heading {
   padding: 5em;
-  
+
 }
 
 .portfolio .container {
   width: 80vw;
-  height: 100vh;
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2em;
 }
 
 .card {
   width: 300px;
   background-color: #202022;
   margin: 1em;
-  margin-bottom: 30%;
-
 }
 
 .card__img {
@@ -242,20 +267,22 @@ h1 {
   background-size: cover;
 }
 
-.card__img1{
-   background-image: url(../images/mercadoLiebre.JPG);
+.card__img1 {
+  background-image: url(../images/mercadoLiebre.JPG);
 }
 
-.card__img2{
+.card__img2 {
   background-image: url(../images/fragance-life.JPG);
 
 }
-.card__img3{
+
+.card__img3 {
   background-image: url(../images/crudCars.JPG);
 
 }
-.card:hover{
-  box-shadow: 0px 0px 5px 3px rgba(255, 255, 255,0.2);
+
+.card:hover {
+  box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.2);
 }
 
 .card__title {
@@ -267,6 +294,7 @@ h1 {
   display: flex;
   justify-content: space-evenly;
 }
+
 .card__proyect-links a {
   color: #fff;
   text-decoration: none;
@@ -293,6 +321,7 @@ h1 {
   width: 30vw;
   margin-top: 2em;
 }
+
 .form-group textarea {
   height: 150px;
   padding: 1.5em;
@@ -325,7 +354,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   padding: 2em;
   background-color: #AAEB83;
@@ -346,7 +375,8 @@ h1 {
   width: 300px;
   margin-top: 1em;
 }
-.sotial-networks a{
+
+.sotial-networks a {
   text-decoration: none;
   text-transform: none;
   color: #121213;
@@ -358,17 +388,24 @@ h1 {
 }
 
 .experience {
-  height: 110vh;
+  min-height: 100vh;
 }
 
-.experience .experience-heading{
-      padding-top: 6em;
-      padding-left: 5em;
+.experience .experience-heading {
+  padding-top: 6em;
+  padding-left: 5em;
 }
-  
-.experience .experience-heading  h2 {
-      font-size: 2em;
-      color: #121213;   
+
+.experience .experience-heading h2 {
+  font-size: 2em;
+  color: #121213;
+}
+
+
+.portfolio-heading,
+.experience-heading {
+  padding: 2em 5vw 1em;
+  text-align: left;
 }
 
 .experience .container {
@@ -377,17 +414,14 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  /* Distribuye las 3 tablas verticalmente */
   width: 100%;
 }
 
-.experience-card{
+.experience-card {
   width: 80%;
-    flex: 1;
-    justify-content: center;
-    /* Cada una ocupa 1 parte del alto disponible */
-    overflow-y: auto;
-    /* Agrega scroll si el contenido se pasa */
+  flex: 1;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 .experience-card table {
@@ -403,13 +437,230 @@ h1 {
   border: 0px solid #ccc;
 }
 
-.experience-card th{
+.experience-card th {
   font-size: 1.5em;
   font-weight: bolder;
   display: flex;
   align-items: center;
 }
 
-.experience-card th img{
+.experience-card th img {
   width: 10%;
+}
+
+.toggle-menu {
+  display: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+
+/* =========================== */
+/* 🔧 MEDIA QUERIES RESPONSIVE */
+/* =========================== */
+
+/* Tablets (768px - 1023px) */
+@media screen and (max-width: 1023px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 2em;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  .main img {
+    margin-top: 0;
+    width: 80%;
+    height: auto;
+  }
+
+  .about {
+    grid-template-columns: 1fr;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+  }
+
+  .about-info {
+    padding: 2em;
+  }
+
+  .info-content {
+    text-align: left;
+  }
+
+  .main img {
+    margin: 2em auto 0;
+  }
+
+  .info-content h1 {
+    text-align: left;
+    font-size: 2em;
+  }
+
+  .info-content p {
+    text-align: left;
+  }
+
+  .portfolio .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    width: 90%;
+    margin: 1.5em 0;
+  }
+
+  .experience {
+    height: auto;
+  }
+
+  .experience .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .experience-card {
+    width: 90%;
+  }
+
+  .container-contact {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-group {
+    width: 90%;
+  }
+}
+
+/* Smartphones (≤ 767px) */
+@media screen and (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    position: relative;
+  }
+
+  .toggle-menu {
+    display: block;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5em;
+    right: 1em;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1em;
+    background-color: #121213;
+  }
+
+  .navbar.open .menu {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0.5em 0;
+  }
+
+  .brand {
+    margin: 0 0 1em 0;
+  }
+
+  .main {
+    width: 90vw;
+    grid-template-columns: 1fr;
+    height: auto;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .main img {
+    width: 90%;
+    height: auto;
+    margin: 2em auto 0;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+    padding: 2em;
+  }
+
+  .about-info {
+    padding: 2em;
+  }
+
+  .portfolio .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .experience .container {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .experience-card {
+    width: 95%;
+  }
+
+  .experience-card th img {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .contact-section {
+    padding: 2em 1em;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .footer-content h2 {
+    font-size: 1.5em;
+  }
+
+  .footer-content h5 {
+    font-size: 1em;
+  }
+
+  .sotial-networks {
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
 }
