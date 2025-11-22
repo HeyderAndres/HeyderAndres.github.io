@@ -1,0 +1,17 @@
+{
+  "FrontEnd": ["React", "Javascript", "HTML", "CSS"],
+  "BackEnd": [
+    "Nodejs & Express",
+    "Java & SpringBoot",
+    "PostgreSQL & MongoDB",
+    "REST, SOAP & ISO8583",
+    "Python & FastAPI"
+  ],
+  "ToolsAndDevOps": [
+    "Git & Github",
+    "Docker",
+    "AWS Lambdas",
+    "AWS SQS",
+    "Jira Cloud"
+  ]
+}

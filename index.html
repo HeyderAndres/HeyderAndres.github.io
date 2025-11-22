@@ -1,343 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Heider Arellano</title>
-    <link rel="stylesheet" href="public/stylesheets/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-    <script src="public/javascripts/contact.js"></script>
-  </head>
+<html lang="es">
 
-  <body>
-    <div class="wrapper" id="home">
-      <header>
-        <nav class="navbar">
-          <div class="brand">
-            <a href="/" id="logo">
-              <h2>Heider<span> Arellano </span></h2>
-            </a>
-          </div>
-          <ul class="menu">
-            <li><a href="/" class="active">Inicio</a></li>
-            <li><a href="#about">Acerca de mí</a></li>
-            <li><a href="#portfolio">Proyectos</a></li>
-            <li><a href="#experience">Experiencia</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-          <div class="toggle-menu" onclick="document.querySelector('.navbar').classList.toggle('open')">
-            <i class="fas fa-bars"></i>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heider A. Arellano O. | Desarrollador Full-Stack</title>
+    <meta name="description" content="Heider Arellano - Desarrollador Full-Stack. +3 años de 
+        experiencia con Java, Spring Boot, Node.js, AWS. Experiencia en 
+        integración REST, SOAP, ISO8583. ¡Mira mi CV!">
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Heider Andrés Arellano Oviedo">
+
+    <meta property="og:title" content="Heider Arellano - Desarrollador Full-Stack" />
+    <meta property="og:description" content="+3 años de 
+        experiencia con Java, Spring Boot, Node.js, AWS. Experiencia en 
+        integración REST, SOAP, ISO8583. ¡Mira mi CV!" />
+    <meta property="og:image" content="https://heyderandres.github.io/public/images/heider.jpg" />
+    <meta property="og:url" content="https://heyderandres.github.io/" />
+    <meta property="og:type" content="website" />
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+
+<body id="home">
+    <header >
+        <h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-coffee">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1" />
+                <path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+                <path d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z" />
+                <path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+            </svg>
+            Heider Arellano
+        </h1>
+        <nav>
+            <a href="#proyects-section">Proyectos</a>
+            <a href="#experience-section">Experiencia</a>
+            <a href="#skills-section">Habilidades</a>
+            <!-- <a href="#contact-section">Contacto</a> -->
+            <a href="#" download="./document/CV-Heider.pdf">Descargar Curriculum</a>
         </nav>
-      </header>
-      <main class="main">
-        <div class="info-content">
-          <h1><span>Hola!</span></h1>
-          <p>
-            Es un placer saludarte y ver tu interés en mi perfil profesional.
-            <br />Soy tecnólogo en análisis y desarrollo de sistemas de
-            información y desarrollador web full-stack, apasionado por el
-            desarrollo backend, el aprendizaje continuo y el trabajo en equipo.
-          </p>
-          <p>
-            A continuación te dejo un enlace para descargar mi CV y obtener más
-            información acerca de mi trayectoria profesional.
-          </p>
-          <a
-            href="public/document/CV-Heider.pdf"
-            download="public/document/CV-Heider.pdf"
-            ><button class="download-cv">Descargar CV</button></a
-          >
-        </div>
-        <img src="public/images/heider.jpg" alt="" />
-      </main>
-    </div>
+    </header>
+    <main>
+        <section  class="horizontal-elements">
+            <div>
+                <header class="secondary-headers">
+                    <h2>Heider Arellano</h2>
+                    <span>Desarrollador Full-Stack | Desarrollando soluciones innovadoras con código.</span>
+                </header>
+                <p>Tecnólogo en análisis y desarrollo de sistemas de
+                    información y desarrollador web full-stack, apasionado por el
+                    desarrollo backend, el aprendizaje continuo y el trabajo en equipo.</p>
+                <div>
+                    <a href="#experience-section">Ver mi Trabajo</a>
+                    <a href="#contact-section">Ponte en Contacto</a>
+                </div>
+                <footer>
+                    <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="currentColor"
+                            class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" />
+                        </svg></a>
+                    <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="currentColor"
+                            class="icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+                        </svg></a>
+                </footer>
 
-    <div class="about" id="about">
-      <img src="public/images/About-me.jpg" alt="" />
-      <div class="about-info">
-        <h2>Acerca de Mí</h2>
-        <div class="divider"></div>
-        <p>
-          Soy desarrollador de software con más de 4 años de experiencia,
-          especializado en backend y apasionado por construir soluciones
-          robustas, escalables y orientadas a servicios. Soy tecnólogo en
-          Análisis y Desarrollo de Sistemas de Información y he complementado mi
-          formación con diversos bootcamps, entre ellos Misión TIC 2022 y 
-          programacion web full stack de Digital House, donde trabajé con tecnologías como
-          JavaScript, Node.js, Express, React, Git, GitHub y el patrón
-          Modelo-Vista-Controlador. Entre los proyectos desarrollados durante
-          estos espacios destacan un e-commerce funcional y una réplica del
-          frontend de Mercado Libre.</p>
-          <p>Actualmente me desempeño como desarrollador
-          backend semi-senior en Puntored, una fintech colombiana enfocada en la
-          inclusión financiera. Durante aproximadamente 3 años en la empresa, he
-          trabajado en el backend de soluciones que
-          habilitan servicios financieros, bancarios, recargas móviles,
-          distribución de pines de contenido y monederos digitales.
-          </p>
-          <p>Inicié mi trayectoria en Puntored como desarrollador Full Stack, donde contribuí
-          al desarrollo de un sistema monolítico basado en Spring Boot,
-          PostgreSQL, MongoDB y Redis. Implementé integraciones clave usando
-          Java, ISO8583, SOAP y APIs RESTful, asegurando una experiencia estable
-          para los usuarios y una integración efectiva con terceros.
-          </p>
-          <p>
-          Posteriormente, evolucioné al rol de backend semi-senior, iniciado la
-          transformación de nuestra arquitectura de monolito hacia
-          microservicios, utilizando Spring Boot y Spring Cloud. He implementado
-          patrones de diseño, pruebas unitarias y estrategias de modularización
-          para garantizar un sistema escalable, mantenible y alineado con buenas
-          prácticas de desarrollo. También he tenido un rol activo en la
-          integración con proveedores externos del sector financiero y de
-          telecomunicaciones, y brindo soporte técnico y guía al equipo para
-          asegurar el éxito en cada entrega.
-          </p>
-          <p> Trabajo con metodologías ágiles
-          (Scrum) y me motiva estar en constante aprendizaje. Me entusiasma
-          diseñar APIs limpias, entender las necesidades del negocio y colaborar
-          en equipo para construir soluciones de impacto.
-        </p>
+            </div>
+            <img style="width: 250px;" src="./public/images/heider.jpg"
+                alt="Foto profesional de Heider Arellano, Desarrollador Full-Stack.">
+        </section>
 
-        <!--  <button class="download-cv">Leer Más</button> -->
-      </div>
-    </div>
-    
-    <div class="portfolio" id="portfolio">
-      <div class="portfolio-heading">
-        <h2>Mis proyectos</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="container">
-        <div class="card">
-          <div class="card__img card__img1"></div>
-          <div class="card__title">
-            <h2>Mercado Liebre</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a
-              href="https://github.com/HeyderAndres/mercadoLiebre"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://mercadoliebreh.herokuapp.com/" target="_blank">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="" hidden>
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="https://mercadoliebreh.herokuapp.com/" target="_blank"
-                >Mercado Liebre</a
-              >
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img card__img2"></div>
-          <div class="card__title">
-            <h2>Fragance Life</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a
-              href="https://github.com/HeyderAndres/grupo_12_fraganceLife"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://proyect-fragance-life.herokuapp.com/"
-              target="_blank"
-            >
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="" hidden>
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a
-                href="https://proyect-fragance-life.herokuapp.com/"
-                target="_blank">Fragance Life</a>
-            </button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__img card__img3"></div>
-          <div class="card__title">
-            <h2>Crud Cars</h2>
-          </div>
-          <div class="card__proyect-links">
-            <a
-              href="https://github.com/HeyderAndres/CrudUsuariosCarros"
-              target="_blank"
-            >
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://crudcars.herokuapp.com/" target="_blank">
-              <i class="fas fa-globe-asia"></i>
-            </a>
-            <a href="" hidden>
-              <i class="fas fa-code"></i>
-            </a>
-          </div>
-          <div class="button-content">
-            <button class="project-details-button download-cv">
-              <a href="https://crudcars.herokuapp.com/" target="_blank"
-                >Crud Cars</a
-              >
-            </button>
-          </div>
-        </div>
-      </div>
+        <section id="proyects-section" class="horizontal-elements">
+            <header class="secondary-headers">
+                <h3>Proyectos</h3>
+            </header>
+            <footer>
+            </footer>
+        </section>
 
-    </div>
+        <section id="experience-section">
+            <header class="secondary-headers">
+                <h3>Experiencia Laboral</h3>
+            </header>
 
-    <div class="experience" id="experience">
-      <div class="experience-heading">
-        <h2>Experiencia en empresas</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="container">
-        <div class="experience-card">
-          <table>
-            <tr>
-              <th colspan="2"><img src="./public/images/puntored_logo.jpeg" alt=""> Puntored</th>
-            </tr>
-            <tr>
-              <td>Período</td>
-              <td>Mayo 2024 – Actualidad</td>
-            </tr>
-            <tr>
-              <td>Rol</td>
-              <td>Desarrollador Backend Semi-Senior</td>
-            </tr>
-            <tr>
-              <td>Tecnologías</td>
-              <td>
-                Java, Spring Boot, Spring Cloud, PostgreSQL, MongoDB, Redis,<br>
-                SOAP, REST, ISO8583, AWS lambdas, AWS SQS, Python, Sendgrid, Scrum, Linux.
-              </td>
-            </tr>
-            <tr>
-              <td>Responsabilidades destacadas</td>
-              <td>
-                <ul>
-                  <li>Transformación de monolito a microservicios con Spring Cloud.</li>
-                  <li>Refactorización de código y mejora de eficiencia con pruebas unitarias.</li>
-                  <li>Integración de servicios de bancos, monederos digitales, recargas móviles y venta de pines.</li>
-                  <li>Desarrollo y mantenimiento de APIs REST escalables y seguras.</li>
-                  <li>Documentación técnica y soporte a integraciones con terceros.</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-          
+        </section>
+
+        <section id="skills-section" class="horizontal-elements">
+            <header class="secondary-headers">
+                <h3>Habilidades</h3>
+            </header>
+            <footer>
+                <div id="frontend">
+                    <h4>FrontEnd</h4>
+                </div>
+                <div id="backend">
+                    <h4>BackEnd</h4>
+                </div>
+                <div id="tools">
+                    <h4>Tools & DevOps</h4>
+                </div>
+            </footer>
+
+        </section>
+        <section id="contact-section">
+            <header class="secondary-headers">
+                <h3>Contacto</h3>
+            </header>
+            <p>¿Tienes algún proyecto en mente o simplemente quieres saludar? Siempre estoy disponible para escribirme. No dudes en
+            contactarme y te responderé lo antes posible.</p>
+
+            <form>
+                <input type="text" placeholder="Ingresa tu nombre">
+                <input type="email" placeholder="Ingresa tu email">
+                <textarea name="message" id="message" placeholder="Ingresa tu mensaje..."></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+        <a id="home-button" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#29ee6b"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-home-up">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.641 0 1.212 .302 1.578 .771" />
+            <path d="M20.136 11.136l-8.136 -8.136l-9 9h2v7a2 2 0 0 0 2 2h6.344" />
+            <path d="M19 22v-6" />
+            <path d="M22 19l-3 -3l-3 3" />
+        </svg></a>
+
+    </main>
+    <footer>
+        <small>2025 - Heider Arellano. Todos los derechos reservados.</small>
+        <div>
+            <div>
+                <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="currentColor"
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" />
+                    </svg></a>
+                <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="currentColor"
+                        class="icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+                    </svg></a>
+            </div>
         </div>
-        <div class="experience-card">
-          <table>
-            <tr>
-              <th colspan="2"><img src="./public/images/puntored_logo.jpeg" alt=""> Puntored</th>
-            </tr>
-            <tr>
-              <td>Período</td>
-              <td>Octubre 2022 – Mayo 2024</td>
-            </tr>
-            <tr>
-              <td>Rol</td>
-              <td>Desarrollador Full Stack</td>
-            </tr>
-            <tr>
-              <td>Tecnologías</td>
-              <td>
-                Java, Spring Boot, PostgreSQL, MongoDB, Redis,<br>
-                SOAP, REST, ISO8583, Scrum, Linux.
-              </td>
-            </tr>
-            <tr>
-              <td>Responsabilidades destacadas</td>
-              <td>
-                <ul>
-                  <li>Integración de servicios de bancos, monederos digitales, recargas móviles y venta de pines.</li>
-                  <li>Desarrollo y mantenimiento de APIs REST escalables y seguras.</li>
-                  <li>Documentación técnica y soporte a integraciones con terceros.</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-          
-        </div>
-
-      </div>
-    </div>
-
-    <div class="contact-section" id="contact">
-      <div class="contact-heading">
-        <h2>Contáctame</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="container-contact">
-        <img src="public/images/background.png" alt="" />
-        <div class="contact-form">
-          <h4>Enviame un email...</h4>
-          <form class="form-group">
-            <input
-              type="text"
-              name="nombre"
-              placeholder="Nombre"
-              class="input"
-              required
-              autocomplete="off"
-            />
-            <input
-              name="asunto"
-              placeholder="Asunto"
-              class="input"
-              required
-              autocomplete="off"
-            />
-            <textarea
-              name="message"
-              placeholder="Por favor ingresa tu mensaje aquí..."
-              required
-              autocomplete="off"
-            ></textarea>
-            <button type="submit" class="btn-submit">
-              Enviar <Mensaje><a id="setEmail"></a></Mensaje>
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <h2>Heider Arellano Oviedo</h2>
-        <h5>Backend Web Developer</h5>
-      </div>
-      <div class="sotial-networks">
-        <a href="https://github.com/HeyderAndres" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/heider-andres-arellano-oviedo/"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="https://www.instagram.com/heyderao/" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
     </footer>
-  </body>
+
+</body>
+
 </html>

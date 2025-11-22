@@ -1,0 +1,27 @@
+[
+    {
+        "imageUrl":"./public/images/fragance-life.JPG",
+        "name":"Fragance Life",
+        "gitHubUrl":"https://github.com/HeyderAndres/grupo_12_fraganceLife",
+        "deployUrl":"https://fragance-life.herokuapp.com/",
+        "description":"proyecto integrador del curso de desarrollo web full stack de Digital Houses. Sitio web para la comercialización de perfumes.",
+        "technologies":["React", "Nodejs", "github"]
+    },
+    {
+        "imageUrl":"./public/images/mercadoLiebre.JPG",
+        "name":"Mercado Liebre",
+        "gitHubUrl":"https://github.com/HeyderAndres/mercadoLiebre",
+        "deployUrl":"https://mercado-liebre.herokuapp.com/",
+        "description":"Clon de ecommerce que busca conectar vendedores con compradores y la aplicación de conceptos prácticos de desarrollo web full stack.",
+        "technologies":["EJS", "Nodejs", "HTML"]
+    },
+    {
+        "imageUrl":"./public/images/crudCars.JPG",
+        "name":"Crud Cars",
+        "gitHubUrl":"https://github.com/HeyderAndres/CrudUsuariosCarros",
+        "deployUrl":"https://crud-cars.herokuapp.com/",
+        "description":"Proyecto realizado con la finalidad de practicar los conocimientos adquiridos en bootcamp de digital House desde frontEnd hasta backEnd.",
+        "technologies":["Express", "Nodejs", "CSS"]
+    }
+    
+]
