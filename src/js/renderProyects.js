@@ -3,6 +3,7 @@ export function renderProyects(proyects) {
   const footerProyects = proyectsSection.querySelector("footer");
   proyects.forEach((proyect) => {
     const article = document.createElement("article");
+    article.className = 'project-card';
 
     const img = document.createElement("img");
     img.loading = "lazy";
@@ -26,6 +27,7 @@ export function renderProyects(proyects) {
 
     const a = document.createElement("a");
     a.href = proyect.gitHubUrl;
+    a.classList.add("link")
     a.target = "_blank";
     a.rel = "noopener noreferrer";
     a.appendChild(proyectName);

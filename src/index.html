@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
 
-<body id="home">
-    <header >
+<body id="home" class="flex-col items-center" >
+    <header>
         <h1>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -39,38 +39,56 @@
             Heider Arellano
         </h1>
         <nav>
-            <a href="#proyects-section">Proyectos</a>
-            <a href="#experience-section">Experiencia</a>
-            <a href="#skills-section">Habilidades</a>
-            <!-- <a href="#contact-section">Contacto</a> -->
-            <a href="#" download="./document/CV-Heider.pdf">Descargar Curriculum</a>
+            <a class="link" href="#home">Inicio</a>
+            <a class="link" href="#proyects-section">Proyectos</a>
+            <a class="link" href="#experience-section">Experiencia</a>
+            <a class="link" href="#skills-section">Habilidades</a>
+            <a class="link" href="#contact-section">Contacto</a>
+            <a class="btn" href="#" download="./document/CV-Heider.pdf">Descargar Curriculum</a>
         </nav>
+        
     </header>
+    <button id="toggle-menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-left">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M13 20l-3 -8l3 -8" />
+    </svg></button>
+    <div id="overlay"></div>
     <main>
-        <section  class="horizontal-elements">
+        <section class="horizontal-elements">
             <div>
                 <header class="secondary-headers">
                     <h2>Heider Arellano</h2>
-                    <span>Desarrollador Full-Stack | Desarrollando soluciones innovadoras con código.</span>
+                    <strong class="strong-text">Desarrollador Full-Stack | Desarrollando soluciones innovadoras con
+                        código.</strong>
                 </header>
-                <p>Tecnólogo en análisis y desarrollo de sistemas de
+                <p class="text-description">Tecnólogo en análisis y desarrollo de sistemas de
                     información y desarrollador web full-stack, apasionado por el
-                    desarrollo backend, el aprendizaje continuo y el trabajo en equipo.</p>
+                    desarrollo software, el aprendizaje continuo y el trabajo en equipo.</br>
+                    Me especializo en el desarrollo backend utilizando tecnologías como Java, Spring Boot, Node JS,
+                    PostgreSQL y MySQL, en
+                    desarrollo frontend he trabajado con React, HTML, CSS y JavaScript. He participado en variedad de
+                    proyectos que abarcan
+                    desde pequeñas aplicaciones hasta soluciones empresariales mas complejas. Me apasiona resolver
+                    problemas a través de la creación de software escalable y eficiente.</p>
                 <div>
-                    <a href="#experience-section">Ver mi Trabajo</a>
-                    <a href="#contact-section">Ponte en Contacto</a>
+                    <a class="btn" href="#experience-section">Ver mi Experiencia</a>
+                    <a class="btn btn-secondary" href="#contact-section">Ponte en Contacto</a>
                 </div>
                 <footer>
-                    <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="currentColor"
+                    <a rel="noopener noreferrer" target="_blank" class="icons"
+                        href="https://github.com/HeyderAndres"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="currentColor"
                             class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" />
                         </svg></a>
-                    <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="currentColor"
-                            class="icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin">
+                    <a rel="noopener noreferrer" target="_blank" class="icons"
+                        href="https://www.linkedin.com/in/heider-andres-arellano-oviedo/"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
@@ -78,7 +96,7 @@
                 </footer>
 
             </div>
-            <img style="width: 250px;" src="./public/images/heider.jpg"
+            <img src="./public/images/heider.jpg"
                 alt="Foto profesional de Heider Arellano, Desarrollador Full-Stack.">
         </section>
 
@@ -103,54 +121,57 @@
             </header>
             <footer>
                 <div id="frontend">
-                    <h4>FrontEnd</h4>
+                    <strong class="strong-text">FrontEnd</strong>
                 </div>
                 <div id="backend">
-                    <h4>BackEnd</h4>
+                    <strong class="strong-text">BackEnd</strong>
                 </div>
                 <div id="tools">
-                    <h4>Tools & DevOps</h4>
+                    <strong class="strong-text">Tools & DevOps</strong>
                 </div>
             </footer>
 
         </section>
-        <section id="contact-section">
+        <section id="contact-section" class="flex-col">
             <header class="secondary-headers">
                 <h3>Contacto</h3>
             </header>
-            <p>¿Tienes algún proyecto en mente o simplemente quieres saludar? Siempre estoy disponible para escribirme. No dudes en
-            contactarme y te responderé lo antes posible.</p>
+            <p class="text-description">¿Tienes algún proyecto en mente o simplemente quieres saludar? Siempre estoy
+                disponible para escribirme.
+                No dudes en
+                contactarme y te responderé lo antes posible.</p>
 
-            <form>
-                <input type="text" placeholder="Ingresa tu nombre">
-                <input type="email" placeholder="Ingresa tu email">
-                <textarea name="message" id="message" placeholder="Ingresa tu mensaje..."></textarea>
-                <button type="submit">Enviar Mensaje</button>
+            <form id="form-email">
+                <input type="text" required autocomplete="off" name="name" placeholder="Ingresa tu nombre">
+                <input type="text" required autocomplete="off" name="subject" placeholder="Ingresa el asunto">
+                <textarea name="message" required name="message" id="message" placeholder="Ingresa tu mensaje..."></textarea>
+                <button class="btn" type="submit">Enviar Mensaje</button>
             </form>
         </section>
-        <a id="home-button" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#29ee6b"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-home-up">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.641 0 1.212 .302 1.578 .771" />
-            <path d="M20.136 11.136l-8.136 -8.136l-9 9h2v7a2 2 0 0 0 2 2h6.344" />
-            <path d="M19 22v-6" />
-            <path d="M22 19l-3 -3l-3 3" />
-        </svg></a>
+        <a class="btn btn-secondary" id="home-button" href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="#29ee6b" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-home-up">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2c.641 0 1.212 .302 1.578 .771" />
+                <path d="M20.136 11.136l-8.136 -8.136l-9 9h2v7a2 2 0 0 0 2 2h6.344" />
+                <path d="M19 22v-6" />
+                <path d="M22 19l-3 -3l-3 3" />
+            </svg></a>
 
     </main>
     <footer>
         <small>2025 - Heider Arellano. Todos los derechos reservados.</small>
         <div>
             <div>
-                <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="currentColor"
-                        class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
+                <a class="icons" href="https://github.com/HeyderAndres" target="_blank" rel="noopener noreferrer"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brand-github">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path
                             d="M5.315 2.1c.791 -.113 1.9 .145 3.333 .966l.272 .161l.16 .1l.397 -.083a13.3 13.3 0 0 1 4.59 -.08l.456 .08l.396 .083l.161 -.1c1.385 -.84 2.487 -1.17 3.322 -1.148l.164 .008l.147 .017l.076 .014l.05 .011l.144 .047a1 1 0 0 1 .53 .514a5.2 5.2 0 0 1 .397 2.91l-.047 .267l-.046 .196l.123 .163c.574 .795 .93 1.728 1.03 2.707l.023 .295l.007 .272c0 3.855 -1.659 5.883 -4.644 6.68l-.245 .061l-.132 .029l.014 .161l.008 .157l.004 .365l-.002 .213l-.003 3.834a1 1 0 0 1 -.883 .993l-.117 .007h-6a1 1 0 0 1 -.993 -.883l-.007 -.117v-.734c-1.818 .26 -3.03 -.424 -4.11 -1.878l-.535 -.766c-.28 -.396 -.455 -.579 -.589 -.644l-.048 -.019a1 1 0 0 1 .564 -1.918c.642 .188 1.074 .568 1.57 1.239l.538 .769c.76 1.079 1.36 1.459 2.609 1.191l.001 -.678l-.018 -.168a5.03 5.03 0 0 1 -.021 -.824l.017 -.185l.019 -.12l-.108 -.024c-2.976 -.71 -4.703 -2.573 -4.875 -6.139l-.01 -.31l-.004 -.292a5.6 5.6 0 0 1 .908 -3.051l.152 -.222l.122 -.163l-.045 -.196a5.2 5.2 0 0 1 .145 -2.642l.1 -.282l.106 -.253a1 1 0 0 1 .529 -.514l.144 -.047l.154 -.03z" />
                     </svg></a>
-                <a class="icons" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                <a class="icons" href="https://www.linkedin.com/in/heider-andres-arellano-oviedo/"
+                    rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="currentColor"
                         class="icon icon-tabler icons-tabler-filled icon-tabler-brand-linkedin">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />

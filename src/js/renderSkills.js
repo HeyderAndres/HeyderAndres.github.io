@@ -14,6 +14,7 @@ function createSkillGroup(skillsGroup) {
   skillsGroup.forEach((skill) => {
     const skillItem = document.createElement("li");
     skillItem.textContent = skill;
+    skillItem.classList.add("text-description");
     listSkills.appendChild(skillItem);
   });
 

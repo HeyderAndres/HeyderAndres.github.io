@@ -9,6 +9,7 @@ export function renderExperiences(experiences) {
 
     const company = document.createElement("strong");
     company.textContent = experience.company;
+    company.classList.add("strong-text");
 
     const jobDuration = document.createElement("small");
     jobDuration.textContent = experience.date;
@@ -16,6 +17,7 @@ export function renderExperiences(experiences) {
     const listResposibilities = document.createElement("ul");
     experience.responsibilities.forEach((responsibility) => {
       const responsibilityItem = document.createElement("li");
+      responsibilityItem.classList.add("text-description")
       responsibilityItem.textContent = responsibility;
       listResposibilities.appendChild(responsibilityItem);
     });
