@@ -131,11 +131,16 @@ ul {
     outline: none;
   }
 
-            &:first-child {
-              display: none;
-              pointer-events: none;
-            }
+  &:first-child {
+    display: none;
+    pointer-events: none;
+  }
 
+}
+
+.icons-nav{
+  display: none;
+  pointer-events: none;
 }
 
 .text-description {
@@ -468,8 +473,8 @@ main>section:nth-child(1) {
   nav {
     position: fixed;
     inset: 0 0 auto auto;
-    width: max-content;
-    /* max-width: 350px; */
+    width: 75%;
+    max-width: 300px;
     height: 100vh;
     height: 100dvh;
     background: #052312;
@@ -485,19 +490,38 @@ main>section:nth-child(1) {
 
     a:last-child {
       margin-top: auto;
+      padding: .3rem .5rem;
+      align-self: center;
+      svg{
+        justify-self: center;
+      }
     }
 
   }
 
   .link{
+  
+      display: flex;
+      flex-direction: row;
+      gap: .5rem;
+      
+    
     &:first-child{
       display: flex;
       pointer-events: auto;
     }
   }
 
+  .icons-nav{
+    display: flex;
+    &:last-child{
+      align-content: center;
+    }
+  }
+
   nav.menu-open {
     display: flex;
+
   }
 
   #overlay {
