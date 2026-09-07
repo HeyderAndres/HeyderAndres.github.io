@@ -1,35 +1,43 @@
+import { getLang, localize } from "./i18n.js";
+
 export function renderExperiences(experiences) {
-  const experienceSection = document.querySelector("#experience-section");
+  const list = document.querySelector("#experience-list");
+  if (!list) return;
+  list.replaceChildren();
 
   experiences.forEach((experience) => {
     const article = document.createElement("article");
 
     const jobTitle = document.createElement("h4");
-    jobTitle.textContent = experience.jobTitle;
+    jobTitle.textContent = localize(experience.jobTitle);
 
     const company = document.createElement("strong");
     company.textContent = experience.company;
     company.classList.add("strong-text");
 
     const jobDuration = document.createElement("small");
-    jobDuration.textContent = experience.date;
+    jobDuration.textContent = localize(experience.date);
 
-    const listResposibilities = document.createElement("ul");
-    experience.responsibilities.forEach((responsibility) => {
+    const listResponsibilities = document.createElement("ul");
+    localizeList(experience.responsibilities).forEach((responsibility) => {
       const responsibilityItem = document.createElement("li");
-      responsibilityItem.classList.add("text-description")
+      responsibilityItem.classList.add("text-description");
       responsibilityItem.textContent = responsibility;
-      listResposibilities.appendChild(responsibilityItem);
+      listResponsibilities.appendChild(responsibilityItem);
     });
 
     const div = document.createElement("div");
-
     div.appendChild(jobTitle);
     div.appendChild(jobDuration);
     article.appendChild(div);
     article.appendChild(company);
-    article.appendChild(listResposibilities);
+    article.appendChild(listResponsibilities);
 
-    experienceSection.appendChild(article);
+    list.appendChild(article);
   });
+}
+
+function localizeList(value) {
+  if (Array.isArray(value)) return value;
+  return value?.[getLang()] ?? value?.es ?? [];
 }

@@ -1,27 +1,39 @@
 [
-    {
-        "imageUrl":"./public/images/fragance-life.JPG",
-        "name":"Fragance Life",
-        "gitHubUrl":"https://github.com/HeyderAndres/grupo_12_fraganceLife",
-        "deployUrl":"https://fragance-life.herokuapp.com/",
-        "description":"proyecto integrador del curso de desarrollo web full stack de Digital Houses. Sitio web para la comercialización de perfumes.",
-        "technologies":["React", "Nodejs", "github"]
+  {
+    "name": { "es": "Integraciones de pagos y servicios", "en": "Payment and service integrations" },
+    "description": {
+      "es": "APIs e integraciones para bancos, monederos, recargas y pines. Contratos REST claros y operación diaria en un entorno fintech.",
+      "en": "APIs and integrations for banks, wallets, top-ups, and pins. Clear REST contracts and day-to-day operations in a fintech environment."
     },
-    {
-        "imageUrl":"./public/images/mercadoLiebre.JPG",
-        "name":"Mercado Liebre",
-        "gitHubUrl":"https://github.com/HeyderAndres/mercadoLiebre",
-        "deployUrl":"https://mercado-liebre.herokuapp.com/",
-        "description":"Clon de ecommerce que busca conectar vendedores con compradores y la aplicación de conceptos prácticos de desarrollo web full stack.",
-        "technologies":["EJS", "Nodejs", "HTML"]
+    "technologies": ["Java", "Spring Boot", "REST", "ISO8583"],
+    "kind": "work"
+  },
+  {
+    "name": { "es": "De monolito a servicios", "en": "Monolith to services" },
+    "description": {
+      "es": "Separación gradual de un monolito hacia servicios con Spring Cloud: límites más claros, deploys más seguros y menos acoplamiento.",
+      "en": "Gradual split of a monolith into Spring Cloud services: clearer boundaries, safer deploys, and less coupling."
     },
-    {
-        "imageUrl":"./public/images/crudCars.JPG",
-        "name":"Crud Cars",
-        "gitHubUrl":"https://github.com/HeyderAndres/CrudUsuariosCarros",
-        "deployUrl":"https://crud-cars.herokuapp.com/",
-        "description":"Proyecto realizado con la finalidad de practicar los conocimientos adquiridos en bootcamp de digital House desde frontEnd hasta backEnd.",
-        "technologies":["Express", "Nodejs", "CSS"]
-    }
-    
+    "technologies": ["Spring Cloud", "Java", "APIs"],
+    "kind": "work"
+  },
+  {
+    "name": { "es": "Automatización en Jira Cloud", "en": "Jira Cloud automation" },
+    "description": {
+      "es": "Formularios y automatizaciones que crean tareas e historias de usuario, reduciendo trabajo manual del equipo.",
+      "en": "Forms and automations that create tasks and user stories, cutting the team's manual work."
+    },
+    "technologies": ["Jira Cloud", "Jira Forms"],
+    "kind": "work"
+  },
+  {
+    "name": { "es": "Prueba técnica Java (semisenior)", "en": "Java semi-senior tech test" },
+    "description": {
+      "es": "Ejercicios de backend en Java para el proceso semisenior. Código público, sin datos de clientes.",
+      "en": "Java backend exercises from a semi-senior hiring process. Public code, no client data."
+    },
+    "technologies": ["Java"],
+    "gitHubUrl": "https://github.com/HeyderAndres/prueba-tecnica-java-semisenior",
+    "kind": "public"
+  }
 ]

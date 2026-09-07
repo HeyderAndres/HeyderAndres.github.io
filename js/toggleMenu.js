@@ -1,26 +1,39 @@
-  const toggle = document.querySelector("#toggle-menu");
-  const nav = document.querySelector('nav')
-  const overlay = document.querySelector("#overlay");
-  const body = document.body;
+import { t } from "./i18n.js";
 
-  console.log(toggle);
-  console.log(overlay);
-  
-  nav.addEventListener("click", (event) => {
-    const element = event.target;
-    if (element.classList.contains('link')) {
-      console.log('cick a un enlace');
-      nav.classList.remove("menu-open")
-      body.classList.toggle("menu-open");
-    }
-  })
+const toggle = document.querySelector("#toggle-menu");
+const nav = document.querySelector("nav");
+const overlay = document.querySelector("#overlay");
+const body = document.body;
 
-  toggle?.addEventListener("click", () => {
-    body.classList.toggle("menu-open");
-    nav.classList.toggle("menu-open");
-  });
+function isOpen() {
+  return nav?.classList.contains("menu-open");
+}
 
-  overlay.addEventListener("click", () => {
-    body.classList.remove("menu-open");
-    nav.classList.remove("menu-open")
-  });
+function setOpen(open) {
+  nav?.classList.toggle("menu-open", open);
+  body.classList.toggle("menu-open", open);
+  toggle?.setAttribute("aria-expanded", String(open));
+  toggle?.setAttribute("aria-label", open ? t("menu.close") : t("menu.open"));
+}
+
+function closeMenu() {
+  setOpen(false);
+}
+
+nav?.addEventListener("click", (event) => {
+  if (event.target.closest("a")) closeMenu();
+});
+
+toggle?.addEventListener("click", () => {
+  setOpen(!isOpen());
+});
+
+overlay?.addEventListener("click", closeMenu);
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && isOpen()) closeMenu();
+});
+
+document.addEventListener("langchange", () => {
+  toggle?.setAttribute("aria-label", isOpen() ? t("menu.close") : t("menu.open"));
+});

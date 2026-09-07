@@ -1,11 +1,14 @@
 export function renderSkills(skills) {
-  const frontendDiv = document.querySelector("#frontend");
-  const backendDiv = document.querySelector("#backend");
-  const toolsDiv = document.querySelector("#tools");
+  replaceGroup("#frontend", skills.FrontEnd);
+  replaceGroup("#backend", skills.BackEnd);
+  replaceGroup("#tools", skills.ToolsAndDevOps);
+}
 
-  frontendDiv.appendChild(createSkillGroup(skills.FrontEnd));
-  backendDiv.appendChild(createSkillGroup(skills.BackEnd));
-  toolsDiv.appendChild(createSkillGroup(skills.ToolsAndDevOps));
+function replaceGroup(selector, skillsGroup) {
+  const container = document.querySelector(selector);
+  if (!container) return;
+  container.querySelector("ul")?.remove();
+  container.appendChild(createSkillGroup(skillsGroup));
 }
 
 function createSkillGroup(skillsGroup) {

@@ -1,35 +1,57 @@
 [
   {
-    "jobTitle": "Standar Developer",
+    "jobTitle": { "es": "Standard Developer", "en": "Standard Developer" },
     "company": "Puntored",
-    "date": "Junio 2025 - Actualidad",
-    "responsibilities": [
-      "Automatizar creacion de Tareas e Historias de usuario a traves de Jira Cloud y Jira Forms.",
-      "Integraciones de demanda con aliados a través de experiencias embebidas",
-      "Integraciones de oferta para servicios de bancos, monederos digitales, recargas móviles y venta de pines.",
-      "Desarrollo y mantenimiento de APIs REST escalables y seguras."
-    ]
+    "date": { "es": "Junio 2025 - Actualidad", "en": "June 2025 - Present" },
+    "responsibilities": {
+      "es": [
+        "Automatizo la creación de tareas e historias de usuario con Jira Cloud y Jira Forms.",
+        "Integro demanda con aliados mediante experiencias embebidas, sin exponer datos de terceros.",
+        "Mantengo integraciones de oferta para pagos y servicios digitales (bancos, monederos, recargas y pines).",
+        "Desarrollo y mantengo APIs REST escalables y seguras."
+      ],
+      "en": [
+        "I automate creation of tasks and user stories with Jira Cloud and Jira Forms.",
+        "I integrate demand with partners through embedded experiences, without exposing third-party data.",
+        "I maintain supply integrations for payments and digital services (banks, wallets, top-ups, and pins).",
+        "I build and maintain scalable, secure REST APIs."
+      ]
+    }
   },
   {
-    "jobTitle": "Desarrollador Backend Semisenior",
+    "jobTitle": { "es": "Desarrollador Backend Semisenior", "en": "Semi-Senior Backend Developer" },
     "company": "Puntored",
-    "date": "Mayo 2024 - Junio 2025",
-    "responsibilities": [
-      "Transformación de monolito a microservicios con Spring Cloud.",
-      "Refactorización de código y mejora de eficiencia con pruebas unitarias.",
-      "Integración de servicios de bancos, monederos digitales, recargas móviles y venta de pines.",
-      "Desarrollo y mantenimiento de APIs REST escalables y seguras.",
-      "Documentación técnica y soporte a integraciones con terceros."
-    ]
+    "date": { "es": "Mayo 2024 - Junio 2025", "en": "May 2024 - June 2025" },
+    "responsibilities": {
+      "es": [
+        "Participé en la separación de un monolito hacia servicios con Spring Cloud.",
+        "Refactoricé código y mejoré cobertura con pruebas unitarias.",
+        "Integré servicios de pagos y recargas con APIs REST y protocolos del sector.",
+        "Documenté y di soporte a integraciones con terceros."
+      ],
+      "en": [
+        "I helped split a monolith into services with Spring Cloud.",
+        "I refactored code and improved coverage with unit tests.",
+        "I integrated payment and top-up services using REST APIs and industry protocols.",
+        "I documented and supported third-party integrations."
+      ]
+    }
   },
   {
-    "jobTitle": "Desarrollador Full Stack",
+    "jobTitle": { "es": "Desarrollador Full Stack", "en": "Full-Stack Developer" },
     "company": "Puntored",
-    "date": "Octubre 2022 - Mayo 2024",
-    "responsibilities": [
-      "Integración de servicios de bancos, monederos digitales, recargas móviles y venta de pines.",
-      "Desarrollo y mantenimiento de APIs REST escalables y seguras.",
-      "Documentación técnica y soporte a integraciones con terceros."
-    ]
+    "date": { "es": "Octubre 2022 - Mayo 2024", "en": "October 2022 - May 2024" },
+    "responsibilities": {
+      "es": [
+        "Desarrollé APIs REST para servicios de pagos y recargas.",
+        "Integré canales de bancos, monederos digitales y venta de pines.",
+        "Documenté contratos y apoyé a equipos que consumían las APIs."
+      ],
+      "en": [
+        "I built REST APIs for payment and top-up services.",
+        "I integrated bank channels, digital wallets, and pin sales.",
+        "I documented contracts and supported teams consuming the APIs."
+      ]
+    }
   }
 ]

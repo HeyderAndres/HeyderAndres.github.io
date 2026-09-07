@@ -1,25 +1,13 @@
-window.onload = function() {
-    const listaNav = document.querySelectorAll(".menu li a");
-    
-    listaNav.forEach(function(element) {
-        element.addEventListener("click",(e)=>{
-            element.classList.add("active");
-            
-    });
-    });
+const email = "heiderarellano@outlook.com";
+const form = document.querySelector("#form-email");
 
-    const email = "heiderarellano@outlook.com";
-    const $form = document.querySelector("#form-email");
-    $form.addEventListener("submit", function(e) {
-        e.preventDefault();
-        const form = new FormData(this);
-        let name = encodeURIComponent(form.get("name"));
-        let subject = encodeURIComponent(form.get("subject"));
-        let message = encodeURIComponent(form.get("message"));
-        const $setEmail = document.createElement('a');
-        $setEmail.setAttribute("href", `mailto:${email}?subject=${name} : ${subject}&body=${message}`);
-        $setEmail.click();
-    });
-
-
-}
+form?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const data = new FormData(this);
+  const name = encodeURIComponent(data.get("name") ?? "");
+  const subject = encodeURIComponent(data.get("subject") ?? "");
+  const message = encodeURIComponent(data.get("message") ?? "");
+  const link = document.createElement("a");
+  link.href = `mailto:${email}?subject=${name} : ${subject}&body=${message}`;
+  link.click();
+});
